@@ -126,6 +126,8 @@ function my_date_picker(arr) {
         $('#' + val).datepicker({dateFormat: 'dd/mm/yy', maxDate: "+0D", firstDay: 1, showButtonPanel: true, changeMonth: true, changeYear: true})
     });
 }
+
+/*Sử dụng code này để tạo nút upload bằng Bootstrap*/
 $(document).on('click', '.browse', function () {
     var file = $(this).parent().parent().parent().find('.file');
     file.trigger('click');
@@ -133,3 +135,4 @@ $(document).on('click', '.browse', function () {
 $(document).on('change', '.file', function () {
     $(this).parent().find('.form-control').val($(this).val().replace(/C:\\fakepath\\/i, ''));
 });
+/*Sử dụng code này để tạo nút upload bằng Bootstrap*/
